@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebIDE</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header><strong>WebIDE</strong>
+  <button id="btn-new">Nuevo</button>
+  <button id="btn-palette">Comandos · F1</button>
+</header>
+<div id="workbench">
+  <aside id="explorer" aria-label="Archivos"></aside>
+  <div id="center">
+    <div id="editors">
+      <main><nav id="tabs" aria-label="Pestañas"></nav><textarea id="editor" spellcheck="false" aria-label="Editor"></textarea></main>
+      <section id="split" hidden></section>
+      <section id="browser" hidden></section>
+    </div>
+    <section id="terminal" hidden></section>
+  </div>
+  <section id="chat" aria-label="Agente IA"></section>
+</div>
+<footer id="statusbar"></footer>
+<dialog id="palette"><input placeholder="Buscar comando o archivo…" aria-label="Paleta"><ul></ul></dialog>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
